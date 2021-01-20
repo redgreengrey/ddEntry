@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>task 02</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <div class="form-header">Регистрация</div>
+      <div class="form-body">
+        <div class="form-body__email input-section">
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            type="e-mail"
+            placeholder="example@site.domain"
+            required
+          />
+        </div>
+        <div class="form-body__password input-section">
+          <div class="password">
+            <label for="password">Пароль</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="password-confirm">
+            <label for="password-confirm">Поторите пароль</label>
+            <input
+              id="password-confirm"
+              type="password"
+              placeholder="password"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-body__fullname input-section">
+          <label for="fullname">ФИО</label>
+          <input
+            id="fullname"
+            type="text"
+            placeholder="Игорев Игорь Игоревич"
+            required
+            pattern="[A-Za-z0-9]{1,20}"
+          />
+        </div>
+        <div class="form-body__age input-section">
+          <label for="age" for="">Возраст</label>
+          <input id="age" type="number" placeholder="18" required />
+        </div>
+      </div>
+      <div class="form-footer">
+        <button class="form-footer__btn form-footer__btn-send">
+          Отправить
+        </button>
+        <button class="form-footer__btn form-footer__btn-cancel">Отмена</button>
+      </div>
+    </form>
+  </body>
+</html>

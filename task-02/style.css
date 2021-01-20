@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+  /* font-size: 14px; */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 28px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+.input-section {
+  width: 360px;
+  height: 49px;
+}
+
+.form {
+  width: 400px;
+  height: 448px;
+  background: #9c9c9c;
+  border: 2px solid #626262;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.form-header,
+.form-body,
+.form-footer {
+  padding: 20px;
+}
+
+.form-header {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: medium;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: left;
+  border-bottom: 1px solid #c4c4c4;
+  font-weight: 600;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  height: 296px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.form-body__email,
+.form-body__fullname,
+.form-body__age {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-body__password {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.password label {
+  margin-bottom: 15px;
+}
+
+.password input,
+.password-confirm input,
+.form-body__age {
+  width: 175px;
+}
+
+.password-confirm {
+  margin-left: 10px;
+}
+.password-confirm label {
+  margin-bottom: 5px;
+}
+
+.form-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form-footer__btn {
+  height: 32px;
+  padding: 8px 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.form-footer__btn-send {
+  background-color: #616161;
+  color: #cccccc;
+}
+
+.form-footer__btn-cancel {
+  background-color: #cccccc;
+  color: #616161;
+}
